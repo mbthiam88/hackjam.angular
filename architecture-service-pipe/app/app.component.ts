@@ -7,16 +7,17 @@ import { categories, Category } from './mocks/categories';
   selector: 'bookstore',
   templateUrl: 'app.template.html'
 })
-
 export class AppComponent {
   books: Book[] = mockBooks;
   categories: Category[] = categories;
-  navClosed: Boolean = true;
-  searchTerm: string = "";
-  title: string = "Bookstore by Hackages"
+  navClosed: boolean = true;
 
-  clicked(): void {
+  getBookDetails(): void {
     console.log('Will be implemented in the next section');
+  }
+
+  public ngOnInit(){
+    this.changeCategory = this.changeCategory.bind(this);
   }
 
   changeCategory(selectedCategory: Category): void {
@@ -39,15 +40,15 @@ export class AppComponent {
     this.books = mockBooks.filter(book => book.category === category.name);
   }
 
-  search(): void {
+  search(searchTerm: string): void {
     this.books = mockBooks.filter(book => {
-      const searchTerm = this.searchTerm.toLowerCase();
+      searchTerm = searchTerm.toLowerCase();
       return book.title.toLowerCase().includes(searchTerm) ||
               book.category.toLocaleLowerCase().includes(searchTerm);
     });
   }
 
-  toggleSideBar(): void {
-    this.navClosed = !this.navClosed;
+  toggleSidebar(open) {
+    this.navClosed = open;
   }
 }

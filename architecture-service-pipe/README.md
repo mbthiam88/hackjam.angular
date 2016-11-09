@@ -1,13 +1,12 @@
-# Architecture, Service, Pipe and routing in Angular 2
+# Getting started with Angular 2
 
 [HackJam Angular 2](hackjam.hackages.io)
 
 
-The goal of this second HackJam will be to learn more about:
+The goal of this second HackJam will  be to learn more about:
 - Architecture
 - Relationship betwen parent and child components
 - Use service for passing data
-- Use Pipe to filter your books
 - Add Navigation and learn about Angular routing
 - [Property Binding] (https://angular.io/docs/ts/latest/guide/cheatsheet.html):
 
@@ -15,17 +14,15 @@ You can find the [repo on Github](https://github.com/hackages/hackjam.angular.gi
 
 Clone it: `git clone https://github.com/hackages/hackjam.angular.git`
 
-Checkout this branch: 'architecture-service-pipe'
-
-`cd architecture-service-pipe`and run `npm start`
+`cd routing-architecture-angular2`and run `npm start`
 
 !oops
 
-Just focus on the `app.template.html` and learn more about [property binding] (https://angular.io/docs/ts/latest/guide/cheatsheet.html):
+Just focus on the `app.template.html` and learn more about property binding!
+
 This application doesn't work :(
 
 ## Important: Fix the app before implementing new feature
-
 
 ## TODO: Features to implement in part 2
 - Architecture: split the app into small components; Use the components folder for spliting your app:
