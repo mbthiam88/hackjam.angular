@@ -2,7 +2,7 @@
 
 [HackJam Angular 2](hackjam.hackages.io)
 
-Navigate to the `getting-started` folder and follow the `README.md`
+Navigate to the `architecture-service-pipe` folder and follow the `README.md`
 
 Happy Coding!!
 
